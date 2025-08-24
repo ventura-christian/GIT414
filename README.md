@@ -11,7 +11,7 @@ This repository contains my coursework for GIT414: Website Design/Internet/Web. 
 ## 📂 Assignments
 
 I’ll update this section with assignment titles and links as they are completed:<br>
-	 0. [Assignment: Publish a Website](https://ventura-christian.github.io/GIT414/Assignment-0/)<br> 
+	 0. 📁[Assignment: Publish a Website](./Assignment-0)<br> 
 	 1. [Assignment: Coming Soon]<br>
   	 2. [Assignment: Coming Soon]<br>
 	 3. [Etc.]<br>
