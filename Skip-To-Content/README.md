@@ -32,7 +32,7 @@ This assignment explores web accessibility by testing screen readers, simulating
 
 1. Open the CodePen link provided in the submission.
 2. Use the Tab key to navigate the page.
-3. The Skip to Content link will appear as the first focusable element, allowing users to bypass navigation and jump directly to the <main> content.
+3. The Skip to Content link will appear as the first focusable element, allowing users to bypass navigation and jump directly to the main content.
 
 ### Author
 
