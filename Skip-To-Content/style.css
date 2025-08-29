@@ -9,23 +9,49 @@ body {
 }
 
 button,
-body,
-input {
+body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: rgb(245, 245, 245);
 }
 
 button {
   color: rgb(0, 0, 0);
+  border-radius: 5px;
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(112, 128, 144);
+  transition: background-color 0.3s;
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+}
+
+button:hover {
+  background-color: rgb(165, 42, 42);
+  color: rgb(245, 245, 245);
 }
 
 .search-container {
   background-color: whitesmoke;
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 20px 10px rgba(0, 0, 0, 1);
-  width: 350px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  align-items: center;
+}
+
+#search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
 }
