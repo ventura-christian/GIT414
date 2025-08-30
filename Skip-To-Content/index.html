@@ -8,6 +8,10 @@
       name="description"
       content="This project explores web accessibility through screen readers, visual impairment simulations, and skip links. It demonstrates how semantic HTML and CSS can improve navigation for all users."
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Activity: Accessibility</title>
   </head>
@@ -23,10 +27,10 @@
         <div class="top-row">
           <nav>
             <ul>
-              <li class="#">Home</li>
-              <li class="#">Card Search</li>
-              <li class="#">Deck Builder</li>
-              <li class="#">About</li>
+              <li class="link-hover">Home</li>
+              <li class="link-hover">Card Search</li>
+              <li class="link-hover">Deck Builder</li>
+              <li class="link-hover">About</li>
             </ul>
           </nav>
         </div>
@@ -45,6 +49,35 @@
         </div>
       </div>
     </main>
-    <!-- <footer>&copy;Christian_Ventura2025</footer> -->
+    <footer>
+      <div class="footer-content">
+        <p>Connect with me</p>
+        <ul class="footer-links">
+          |
+          <li>
+            <a href="#" class="link-hover" target="_blank"
+              ><i class="fab fa-linkedin"></i>LinkedIn</a
+            >
+          </li>
+          |
+          <li>
+            <a href="#" class="link-hover" target="_blank"
+              ><i class="fab fa-github"></i> Github</a
+            >
+          </li>
+          |
+          <li>
+            <a
+              href="mailto:cventura64@outlook.com"
+              class="link-hover"
+              target="_blank"
+            >
+              Email Me</a
+            >
+          </li>
+          |
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
