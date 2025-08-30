@@ -1,3 +1,7 @@
+* {
+  border: none;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -12,7 +16,7 @@ body {
 }
 
 .center-box {
-  max-width: 800px;
+  max-width: 400px;
   margin: 40px auto;
   padding: 40px;
   background-color: #1a1a1a;
@@ -21,6 +25,51 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 20px;
+}
+
+.search-container {
+  /* margin: 10px 20px; */
+  background-color: #1a1a1a;
+  border: 2px solid #60a5fa;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 1px 6px #ededed;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#search-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.search-row {
+  width: 100%;
+}
+
+.search-row ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 10px;
+}
+
+.search-row li {
+  list-style: none;
+}
+
+.search-row a {
+  display: inline-block;
+  font-size: 16px;
 }
 
 .top-row {
@@ -38,10 +87,6 @@ header h1 {
   color: #ededed;
 }
 
-header h1:hover {
-  color: #ff8c00;
-}
-
 nav ul {
   list-style: none;
   display: flex;
@@ -56,63 +101,15 @@ nav li {
   font-weight: bold;
 }
 
-.search-container {
-  background-color: #0d0d0d;
-  border: 2px solid #60a5fa;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 1px 6px #ededed;
-  width: 500px;
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-}
-
-#search-input {
-  width: 100%;
-  max-width: 600px;
-  padding: 12px;
-  display: block;
-  font-size: 16px;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.button-row button {
-  color: #0d0d0d;
-  border-radius: 10px;
-  flex: 1;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  background-color: #60a5fa;
-  transition: background-color 0.2s;
-}
-
-.button-row {
-  display: flex;
-  gap: 10px;
-  width: 100%;
-  max-width: 400px;
-}
-
-.button-row button:hover {
-  background-color: #ff8c00;
-  color: #412323;
-  box-shadow: 0 1px 6px #ededed;
-  transform: translate(-3px);
-}
-
 .link-hover {
-  color: #ededed;
+  color: #ff8c00;
   cursor: pointer;
   font-weight: bold;
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .link-hover:hover {
-  color: #ff8c00;
+  color: #ededed;
   transform: scale(1.2);
 }
 
