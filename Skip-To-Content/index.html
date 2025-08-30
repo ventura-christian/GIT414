@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Author" content="Christian Ventura" />
+    <meta name="author" content="Christian Ventura" />
     <meta
       name="description"
       content="This project explores web accessibility through screen readers, visual impairment simulations, and skip links. It demonstrates how semantic HTML and CSS can improve navigation for all users."
@@ -12,31 +12,39 @@
     <title>Activity: Accessibility</title>
   </head>
   <body>
-    <div class="center-box">
-      <div class="top-row">
+    <main>
+      <div class="center-box">
         <header>
           <h1>
             Magic: the Gathering <br />
             Card Search
           </h1>
         </header>
-        <nav></nav>
-      </div>
-      <main>
-        <div class="search-container">
-          <input
-            type="text"
-            placeholder="Enter a card name"
-            id="search-input"
-          />
-          <div class="button-row">
-            <button id="search-button">GO</button>
-            <button id="random-button">Random Card?</button>
-          </div>
+        <div class="top-row">
+          <nav>
+            <ul>
+              <li class="#">Home</li>
+              <li class="#">Card Search</li>
+              <li class="#">Deck Builder</li>
+              <li class="#">About</li>
+            </ul>
+          </nav>
         </div>
-      </main>
-    </div>
-
+        <div class="search-container">
+          <form action="#">
+            <input
+              type="text"
+              placeholder="Enter a card name"
+              id="search-input"
+            />
+            <div class="button-row">
+              <button id="search-button" type="submit">Search Cards</button>
+              <button id="random-button" type="button">Surprise Me!</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
     <!-- <footer>&copy;Christian_Ventura2025</footer> -->
   </body>
 </html>
