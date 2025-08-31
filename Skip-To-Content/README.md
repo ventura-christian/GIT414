@@ -4,6 +4,10 @@
 
 This assignment explores web accessibility by testing screen readers, simulating visual impairments, and implementing skip links in a webpage. <br> The goal is to understand how users with disabilities experience websites and to practice building accessible navigation with skip links.
 
+### Live Demo
+🔗 [View Here](https://ventura-christian.github.io/GIT414/Skip-To-Content/)
+
+
 ### Tasks to Complete
 
 1. Install and test the screen reader extension Silktide for Chrome.
@@ -33,6 +37,7 @@ This assignment explores web accessibility by testing screen readers, simulating
 1. Open the CodePen link provided in the submission.
 2. Use the Tab key to navigate the page.
 3. The Skip to Content link will appear as the first focusable element, allowing users to bypass navigation and jump directly to the main content.
+
 
 ### Author
 
