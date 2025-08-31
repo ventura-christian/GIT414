@@ -1,34 +1,46 @@
-* {
-  border: none;
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 8vh;
+  background: image('abstrakt.jpg');
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #121212;
+  background: url('abstrakt.jpg');
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  min-height: 100vh;
   color: #ededed;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .center-box {
-  max-width: 400px;
-  margin: 40px auto;
-  padding: 40px;
+  max-width: 500px;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 4px 20px #ededed;
   background-color: #1a1a1a;
-  position: fixed;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 20px;
+  z-index: 900;
 }
 
 .search-container {
-  /* margin: 10px 20px; */
+  margin: 10px;
   background-color: #1a1a1a;
   border: 2px solid #60a5fa;
   padding: 25px;
@@ -68,6 +80,7 @@ body {
 }
 
 .search-row a {
+  border-bottom: 1px solid #60a5fa;
   display: inline-block;
   font-size: 16px;
 }
@@ -82,7 +95,7 @@ body {
 
 header h1 {
   font-size: 2rem;
-  margin: 0;
+  margin: 20px 0;
   padding: 5px;
   color: #ededed;
 }
@@ -99,6 +112,7 @@ nav li {
   color: #ededed;
   cursor: pointer;
   font-weight: bold;
+  border-bottom: 1px solid #60a5fa;
 }
 
 .link-hover {
@@ -114,6 +128,9 @@ nav li {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: 100%;
   padding: 15px 0;
   background: linear-gradient(to right, #1a1a1a, #60a5fa);
@@ -123,6 +140,8 @@ footer {
   margin-top: auto;
   letter-spacing: 1px;
   align-items: center;
+  text-align: center;
+  z-index: 800;
 }
 
 footer p {
@@ -168,4 +187,47 @@ footer p {
 .footer-links a:hover {
   color: #ff8c00;
   transform: scale(1.2);
+}
+
+/* Tablet screens (portrait) */
+@media screen and (min-width: 768px) {
+  .center-box {
+    width: 70%;
+    max-width: 700px;
+    padding: 30px;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 10px 0;
+  }
+}
+
+/* Small Laptops and or Desktop */
+@media screen and (min-width: 1025px) {
+  .center-box {
+    width: 50%;
+    max-width: 900px;
+    padding: 40px;
+  }
+
+  footer {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+}
+
+/* Large Screens and or Ultra-Wide */
+@media screen and (min-width: 1441px) {
+  .center-box {
+    width: 40%;
+    max-width: 1000px;
+    padding: 50px;
+  }
+
+  footer {
+    max-width: 100%;
+    font-size: 1rem;
+    padding: 20px 0;
+  }
 }
