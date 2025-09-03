@@ -4,7 +4,7 @@ main {
   align-items: flex-start;
   min-height: 100vh;
   padding-top: 8vh;
-  background: image('abstrakt.jpg');
+  background: url('abstrakt.jpg');
 }
 
 body {
@@ -18,6 +18,20 @@ body {
   justify-content: space-between;
   color: #ededed;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+button {
+  border-radius: 5px;
+  background-color: #60a5fa;
+  color: #1a1a1a;
+  cursor: pointer;
+  font-weight: lighter;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+button:hover {
+  color: #1a1a1a;
+  transform: scale(1.2);
 }
 
 .skip-link {
@@ -43,7 +57,7 @@ body {
   width: 90%;
   margin: auto;
   padding: 20px;
-  box-shadow: 0 4px 20px #ededed;
+  box-shadow: 0 4px 10px #ededed;
   background-color: #1a1a1a;
   position: absolute;
   display: flex;
@@ -134,14 +148,14 @@ nav li {
 }
 
 .link-hover {
-  color: #ff8c00;
+  color: #60a5fa;
   cursor: pointer;
   font-weight: bold;
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .link-hover:hover {
-  color: #ededed;
+  color: #ff8c00;
   transform: scale(1.2);
 }
 
@@ -169,25 +183,27 @@ footer p {
 
 .footer-content {
   display: flex;
-  justify-content: baseline;
-  gap: 30px;
+  flex-direction: column;
   align-items: center;
+  gap: 10px;
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   margin: 0;
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  gap: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .footer-links li {
   list-style: none;
+  position: relative;
 }
 
 .footer-links a {
@@ -197,7 +213,6 @@ footer p {
   font-weight: bold;
   display: flex;
   align-items: center;
-  gap: 8px;
   transition: transform 0.2s ease, color 0.2s ease;
   cursor: pointer;
 }
@@ -219,6 +234,10 @@ footer p {
     font-size: 0.9rem;
     padding: 10px 0;
   }
+
+  .footer-links {
+    gap: 30px;
+  }
 }
 
 /* Small Laptops and or Desktop */
@@ -232,6 +251,10 @@ footer p {
   footer {
     font-size: 1rem;
     padding: 10px 0;
+  }
+
+  .footer-links {
+    gap: 40px;
   }
 }
 
@@ -247,5 +270,9 @@ footer p {
     max-width: 100%;
     font-size: 1rem;
     padding: 20px 0;
+  }
+
+  .footer-links {
+    gap: 25px;
   }
 }
