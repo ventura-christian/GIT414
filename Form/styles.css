@@ -1,0 +1,43 @@
+:root {
+  --primary-color: #2265bd;
+  --secondary-color: #2f4f4f;
+  --background: #d3d3d3;
+  --secondary-background: #f0ffff;
+  --text-color: #000000;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background: var(--background);
+  color: var(--text-color);
+  line-height: 1.1;
+  padding: 50px;
+}
+
+.form-card {
+  width: min(420px, 86vw);
+  background: var(--secondary-background);
+  margin: 24px auto;
+  padding: 28px 28px 40px;
+  border-radius: 2px;
+  border: 4px solid var(--text-color);
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+.form-heading {
+  color: var(--text-color);
+  font-size: 25px;
+  margin: -8px 0 18px 0;
+}
