@@ -12,13 +12,29 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="" class="form-card">
-      <label class="form-heading">Sup</label>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-      </ul>
+    <h2 class="form-heading">Form</h2>
+    <form action="contact-form">
+      <label for="fullName">Full Name<span class="required">*</span></label>
+      <input id="fullName" name="fullName" type="text" required />
+
+      <label for="email">Email<span class="required">*</span></label>
+      <input id="email" name="email" type="text" required />
+
+      <label for="phone">Phone<span class="required">*</span></label>
+      <input id="phone" name="phone" type="text" required />
+
+      <fieldset>
+        <legend>Preferred Contact Method<span class="required">*</span></legend>
+        <label>
+          <input type="radio" name="contact" value="phone" checked />Phone
+          <input type="radio" name="contact" value="email" />Email
+        </label>
+      </fieldset>
+
+      <label for="message">Message<span class="required">*</span></label>
+      <textarea name="message" id="message" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>
