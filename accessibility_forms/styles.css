@@ -11,6 +11,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  border: 1px solid var(--text-color);
 }
 
 html,
@@ -27,14 +28,19 @@ body {
   padding: 50px;
 }
 
+.form {
+  width: min(420px, 86vw);
+  margin: 5px auto;
+}
+
 .form-card {
   width: min(420px, 86vw);
   background: var(--secondary-background);
-  margin: 24px auto;
+  margin: 5px auto;
   padding: 28px 28px 40px;
   border-radius: 2px;
   border: 4px solid var(--text-color);
-  box-shadow: 0 0 0 2px var(--primary-color);
+  box-shadow: 5px 5px 0 2px var(--primary-color);
 }
 
 .form-heading {
@@ -160,4 +166,8 @@ fieldset {
 legend {
   width: 100%;
   margin-bottom: 8px;
+}
+
+textarea {
+  resize: vertical;
 }
