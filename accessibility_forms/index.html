@@ -6,65 +6,80 @@
     <meta name="author" content="Christian Ventura" />
     <meta
       name="description"
-      content="This a form created through instructions in GIT 414, Arizona State University."
+      content="This a form created through instructions from 'Form Mini Activity - STARTER - FORK' by Jessica Barnett: GIT 414, Arizona State University."
     />
     <link rel="stylesheet" href="styles.css" />
     <title>Assignment: Accessibility Form</title>
   </head>
   <body>
-    <div class="form">
-      <h2 class="form-heading">Form</h2>
-    </div>
-    <div class="form-card">
-      <form class="contact-form">
-        <label for="fullName">Full Name<span class="required">*</span></label>
-        <input
-          id="fullName"
-          name="fullName"
-          type="text"
-          placeholder="Enter your name"
-          required
-        />
+    <main>
+      <div class="form">
+        <h2 class="form-heading">Form</h2>
+      </div>
+      <div class="form-card">
+        <form class="contact-form" action="#" method="post">
+          <label for="fullName">Full Name<span class="required">*</span></label>
+          <input
+            id="fullName"
+            name="fullName"
+            type="text"
+            placeholder="Enter your name"
+            required
+          />
 
-        <label for="email">Email<span class="required">*</span></label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          required
-          placeholder="example@email.com"
-        />
+          <label for="email">Email<span class="required">*</span></label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            placeholder="example@email.com"
+          />
 
-        <label for="phone">Phone<span class="required">*</span></label>
-        <input
-          id="phone"
-          name="phone"
-          type="phone"
-          required
-          placeholder="(555) 123-4567"
-        />
+          <label for="phone">Phone<span class="required">*</span></label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            required
+            placeholder="(555) 123-4567"
+          />
 
-        <fieldset>
-          <legend>
-            Preferred Contact Method<span class="required">*</span>
-          </legend>
-          <label>
-            <input type="radio" name="contact" value="phone" checked />Phone
-            <input type="radio" name="contact" value="email" />Email
-          </label>
-        </fieldset>
+          <fieldset>
+            <legend>
+              Preferred Contact Method<span class="required">*</span>
+            </legend>
+            <label for="contact-phone">
+              <input
+                type="radio"
+                id="contact-phone"
+                name="contact"
+                value="phone"
+                checked
+              />Phone
+            </label>
+            <label for="contact-email">
+              <input
+                type="radio"
+                id="contact-email"
+                name="contact"
+                value="email"
+              />Email
+            </label>
+          </fieldset>
 
-        <label for="message">Message<span class="required">*</span></label>
-        <textarea
-          name="message"
-          id="message"
-          rows="4"
-          placeholder="What's on your mind?"
-        ></textarea>
-        <div class="button">
-          <button type="submit">Submit</button>
-        </div>
-      </form>
-    </div>
+          <label for="message">Message<span class="required">*</span></label>
+          <textarea
+            name="message"
+            id="message"
+            rows="4"
+            placeholder="What's on your mind?"
+          ></textarea>
+          <div class="button">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
   </body>
 </html>
