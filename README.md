@@ -1,4 +1,4 @@
-## GIT414 Website Design/Internet/Web
+# GIT414 Website Design/Internet/Web
 
 👽 Student: <em>Christian Ventura</em><br>
 🏛️ University: <em>Arizona State University</em><br>
@@ -16,10 +16,10 @@ I’ll update this section with assignment titles and links as they are complete
 
 ## 🚀 Goals
 
-    •	Strengthen my skills in website design and web development.
-    •	Build a collection of work that demonstrates progress and applied knowledge.
-    •	Explore best practices in responsive design, usability, and web standards.
+    - Strengthen my skills in website design and web development.
+    - Build a collection of work that demonstrates progress and applied knowledge.
+    - Explore best practices in responsive design, usability, and web standards.
 
 ## 📌 Notes
 
-This repository is intended for educational purposes as part of coursework for GIT414 at ASU.
+This repository is for coursework in GIT414 at Arizona State University.
