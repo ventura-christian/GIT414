@@ -16,9 +16,9 @@ I’ll update this section with assignment titles and links as they are complete
 
 ## 🚀 Goals
 
-    - Strengthen my skills in website design and web development.
-    - Build a collection of work that demonstrates progress and applied knowledge.
-    - Explore best practices in responsive design, usability, and web standards.
+- Strengthen my skills in website design and web development.
+- Build a collection of work that demonstrates progress and applied knowledge.
+- Explore best practices in responsive design, usability, and web standards.
 
 ## 📌 Notes
 
