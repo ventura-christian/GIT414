@@ -10,9 +10,9 @@ This repository contains my coursework for GIT414: Website Design/Internet/Web. 
 ## 📡 Assignments
 
 I’ll update this section with assignment titles and links as they are completed:<br>
-👾[Assignment: Publish a Website](./publish_a_webpage)<br>
-🛸[Assignment: Accessibility](./skip_to_content)<br>
-📝[Assignment: Accessibility Forms](./accessibility_forms)<br>
+👾[Publish a Website](./publish_a_webpage)<br>
+🛸[Skip to Content](./skip_to_content)<br>
+📝[Accessibility Forms](./accessibility_forms)<br>
 
 ## 🚀 Goals
 
