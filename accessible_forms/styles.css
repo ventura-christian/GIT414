@@ -129,12 +129,29 @@ table {
 }
 
 /* ---------- BEGIN CUSTOM STYLES ---------- */
-
 * {
   font-family: sans-serif;
   line-height: 1.35;
 }
 
+body {
+  line-height: 1;
+}
+
+a {
+  color: #0a58ff;
+}
+
+a:focus {
+  border: 2px solid #0a58ff;
+}
+
+a:hover {
+  color: white;
+  background-color: #0a58ff;
+}
+
+/* Skip Link */
 #skipLink {
   position: absolute;
   left: -999px;
@@ -153,24 +170,7 @@ table {
   line-height: 1.3em;
 }
 
-a {
-  color: #0a58ff;
-}
-
-a:focus {
-  border: 2px solid #0a58ff;
-}
-
-a:hover {
-  color: white;
-  background-color: #0a58ff;
-}
-
-header {
-  padding: 2em 0 1em 0;
-  border-bottom: 5px solid #0a58ff;
-}
-
+/* Typography */
 h1,
 h2,
 h3 {
@@ -185,6 +185,23 @@ h1 {
   padding: 0.5em;
 }
 
+h2 {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+}
+
+h3 {
+  font-size: 1.35em;
+  margin: 0.5em 0;
+}
+
+p {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Utility */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -193,24 +210,59 @@ h1 {
   margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  white-space: nowrap; /* added line */
+  white-space: nowrap;
   border: 0;
+}
+
+/* Layout */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5em;
+  padding: 2em 1em;
+  margin-top: 1em;
+  min-height: calc(100vh - 200px);
+  box-sizing: border-box;
+}
+
+section {
+  margin: 1em 0;
+}
+
+header {
+  padding: 2em 0 1em 0;
+  border-bottom: 5px solid #0a58ff;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 nav ul {
   width: 100%;
   max-width: 800px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin: 1em auto 2em auto;
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  padding: 0;
 }
 
-ul li {
-  display: inline-block;
+nav li {
+  list-style: none;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
 }
 
 nav a {
-  display: block;
+  display: inline;
   padding: 1em;
   text-decoration: none;
   font-family: sans-serif;
@@ -219,6 +271,7 @@ nav a {
   text-align: center;
 }
 
+/* Background Decoration */
 #particleBackground {
   width: 100%;
   height: 300px;
@@ -229,47 +282,17 @@ nav a {
   border-bottom: 5px solid #0a58ff;
 }
 
-main {
-  width: calc(100% - 2em);
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1em;
-}
-
-h2 {
-  font-size: 1.5em;
-  margin: 0.5em 0;
-}
-
-p {
-  width: 100%;
-  max-width: 650px;
-  margin: 0 auto;
-}
-
-section {
-  margin: 1em 0;
-}
-
-h3 {
-  font-size: 1.35em;
-  margin: 0.5em 0;
-}
-
+/* Form Styles */
 form {
-  width: 90%;
-  max-width: 350px;
+  max-width: 500px;
   margin: 2em auto;
   padding: 0.75em;
-  border: 2px solid #777;
+  border: 1px solid #777;
   border-radius: 0.2em;
 }
 
-input,
-label,
-textarea {
-  display: block;
-  width: calc(100% - 2em);
+label {
+  font-size: 1.1em;
 }
 
 input,
@@ -278,20 +301,20 @@ select {
   outline: 1px solid #222;
   border: none;
   border-radius: 0.2em;
-}
-
-label {
-  font-size: 1.1em;
-}
-
-.required {
-  color: #c71819;
-}
-
-input {
-  width: 90%;
-  margin: 0.25em auto 0.5em auto;
+  width: 100%;
+  margin-top: 0.25em;
   padding: 0.5em;
+  font-size: 1em;
+}
+
+label,
+input,
+select,
+textarea {
+  display: block;
+  width: calc(100% - 2em);
+  margin: 0.5em 0;
+  box-sizing: border-box;
 }
 
 input:focus,
@@ -307,12 +330,16 @@ textarea:error {
   background-color: #c71819;
 }
 
+.required {
+  color: #c71819;
+}
+
 fieldset {
-  margin: 0.5em auto;
-  padding-bottom: 0.5em;
+  margin-top: 0.75em;
+  padding: 0.75em;
   width: 94%;
   border: 1px solid #222;
-  border-radius: 0.2em;
+  border-radius: 0.25em;
   display: grid;
   grid-template-columns: 30px 1fr 30px 1fr;
 }
@@ -322,8 +349,8 @@ legend {
 }
 
 fieldset label {
-  display: inline;
-  width: 60%;
+  display: inline-block;
+  margin-right: 1.5em;
 }
 
 fieldset input {
@@ -357,12 +384,13 @@ input[type='submit'] {
   font-size: 1.2em;
   width: 95%;
   margin-top: 1em;
-  padding: 0.5em;
+  padding: 0.75em;
   border: none;
   outline: none;
-  border-radius: 0.2em;
+  border-radius: 0.3em;
   background-color: #0a58ff;
-  color: white;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 input[type='submit']:hover,
@@ -371,9 +399,94 @@ input[type='submit']:focus {
   filter: drop-shadow(8px 8px 4px #777);
 }
 
+/* Form Section Layout */
+.form-section {
+  width: 100%;
+  max-width: 500px;
+  margin: 3em auto;
+  padding: 2em;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-section h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #0a58ff;
+}
+
+.form-section form {
+  margin: 0;
+  width: 100%;
+}
+
+form label {
+  display: block;
+  margin-top: 0.75em;
+}
+
+.welcome-section,
+.form-section {
+  max-width: 750px;
+  text-align: center;
+}
+
+.welcome-section p {
+  text-align: justify;
+  margin: 1em auto;
+  line-height: 1.5;
+}
+
+/* Footer */
 footer {
   padding: 1em;
   border-top: 5px solid #0a58ff;
   font-family: sans-serif;
   text-align: center;
+}
+
+/* Media Queries */
+
+/* Small screens: add even margins and spacing */
+@media (max-width: 1200px) {
+  body {
+    margin: 1em;
+  }
+
+  main {
+    padding: 1em;
+    gap: 1.5em;
+  }
+
+  .welcome-section,
+  .form-section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5em;
+    box-sizing: border-box;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 1em;
+  }
+
+  input[type='submit'] {
+    font-size: 1em;
+    padding: 0.6em;
+  }
 }
