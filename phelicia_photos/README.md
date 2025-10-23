@@ -4,7 +4,7 @@
 - The objective is to write semantic, validated, accessible HTML5 code.
 - The website was validated using Nu HTML Checker.
 
-🔗 [Live Demo](https://ventura-christian.github.io/GIT414/skip_to_content/)
+🔗 [Live Demo](https://ventura-christian.github.io/GIT414/phelicia_photos/)
 
 ## Files
 
