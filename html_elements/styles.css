@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* ------------------- GLOBAL STYLE  ------------------- */
+header,
+footer {
+  background-color: #000000;
+  width: 100%;
+  color: #ffffff;
+}
+header {
+  border-bottom: 3px solid #f7ce3e;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer {
+  border-top: 3px solid #f7ce3e;
+  height: auto;
+  text-align: center;
+  padding-top: 10px;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+nav a,
+nav h2 {
+  color: #ffffff;
+  padding: 15px;
+  text-decoration: none;
+}
+nav a:hover,
+nav h2:hover {
+  color: #f7ce3e;
+}
+main {
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+section {
+  padding: 5%;
+}
+#social li {
+  display: inline-block;
+}
+h1 {
+  margin: 10%;
+}
+h1,
+h2,
+nav li {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3em;
+}
+nav li,
+nav h2 {
+  font-size: 1.5em;
+}
+nav h2,
+#social h2 {
+  visibility: hidden;
+  height: 0;
+}
+h2 {
+  font-size: 2em;
+}
+p,
+small {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+p {
+  min-height: 150px;
+}
+small {
+  font-size: 0.75em;
+  font-style: italic;
+}
+img {
+  display: block;
+  width: 100%;
+}
+footer a,
+footer a:visited,
+footer a:focus,
+#social svg:hover {
+  color: #f7ce3e;
+  stroke: #f7ce3e;
+}
+a,
+a:visited,
+a:focus {
+  color: #333;
+}
+/* ------------------- MEDIA QUERIES  ------------------- */
+@media screen and (max-width: 1263px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+  p {
+    min-height: 125px;
+  }
+}
+@media screen and (max-width: 900px) {
+  header {
+    grid-template-columns: 2fr 1fr;
+  }
+  main {
+    grid-template-columns: 1fr;
+  }
+  p {
+    min-height: auto;
+  }
+  nav h2 {
+    visibility: visible;
+    height: auto;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    color: white;
+    width: 150px;
+    cursor: pointer;
+  }
+  nav {
+    position: relative;
+    display: inline-block;
+    top: 25px;
+  }
+  nav ul {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 150px;
+    z-index: 1;
+  }
+  nav a {
+    color: #ffffff;
+    visibility: visible;
+    display: block;
+    text-align: center;
+  }
+  nav li {
+    border-bottom: 1px solid #ffffff;
+  }
+  nav:hover ul {
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  header {
+    grid-template-columns: 1fr;
+    height: 250px;
+  }
+  h1,
+  nav {
+    margin: 0 auto;
+    text-align: center;
+  }
+  h1 {
+    padding-top: 25px;
+  }
+  nav h2,
+  nav,
+  nav ul {
+    border: none;
+    width: 100%;
+  }
+  nav h2 {
+    background-color: #f7ce3e;
+    color: #000000;
+  }
+  nav h2:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #f7ce3e;
+  }
+}
