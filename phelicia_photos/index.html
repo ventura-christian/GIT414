@@ -7,5 +7,53 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Phelicia's Photos</title>
   </head>
-  <body></body>
+
+  <body>
+    <header>
+      <h1>Phelicia's Photos</h1>
+      <nav>
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="#">Architecture</a></li>
+          <li><a href="#">Commercial</a></li>
+          <li><a href="#">Landscape</a></li>
+          <li><a href="#">Travel</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Architecture</h2>
+        <picture>
+          <source
+            media="(min-width:1264px)"
+            srcset="https://assets.codepen.io/780423/arch-400.jpg"
+          />
+          <source
+            media="(max-width:900px)"
+            srcset="https://assets.codepen.io/780423/arch-500.jpg"
+          />
+          <source
+            media="(max-width:675px)"
+            srcset="https://assets.codepen.io/780423/arch-800.jpg"
+          />
+          <img
+            src="https://assets.codepen.io/780423/arch-400.jpg"
+            alt="Île de Nantes, Nantes, France"
+          />
+        </picture>
+        <p>
+          Architecture Photography involves photographing buildings and
+          structures. They are accurate representations of the subjects,
+          captured using specialized cameras and techniques.
+        </p>
+        <small>
+          Photo by
+          <a href="https://unsplash.com/@valentinlacoste">Valentin Lacoste</a>
+          on <a href="https://unsplash.com/s/photos/architectural">Unsplash</a>
+        </small>
+      </section>
+    </main>
+  </body>
 </html>
