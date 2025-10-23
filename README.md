@@ -14,6 +14,7 @@ I’ll update this section with assignment titles and links as they are complete
 🛸[Skip to Content](./skip_to_content)<br>
 📝[Accessibility Forms](./accessibility_forms)<br>
 🗿[Accessible Forms](./accessible_forms)
+🧭[Phelicia's Photos](./phelicia_photos)
 
 ## 🚀 Goals
 
