@@ -16,6 +16,7 @@ I’ll update this section with assignment titles and links as they are complete
 - 📝[Accessibility Forms](./accessibility_forms)
 - 🗿[Accessible Forms](./accessible_forms)
 - 🧭[Phelicia's Photos](./phelicia_photos)
+- 🦥[Wonderlust](./wonderlust)
 
 ## 🚀 Goals
 
