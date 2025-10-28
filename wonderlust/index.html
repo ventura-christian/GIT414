@@ -11,24 +11,18 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Wonderlust Travel- Destination Majorca</title>
   </head>
+
   <body>
-    <a href="#main" class="sr-only">Skip to main content</a>
+    <a href="#main-content" class="sr-only">Skip to main content</a>
     <a href="#plan-your-trip" class="sr-only">Skip to plan your trip</a>
     <a href="#testimonials" class="sr-only">Skip to testimonials</a>
     <a href="#about-your-destination" class="sr-only"
       >Skip to about your destination</a
     >
     <a href="#contact-us" class="sr-only">Skip to contact us</a>
-    <header>
-      Destination Majorca Let Wonderlust Travel help you plan the trip of your
-      dreams! Specializing in unforgettable experiences, we offer curated trips
-      to the breathtaking island of Majorca, a hidden gem in the Mediterranean.
-      Whether you crave sun-drenched beaches, charming villages, or thrilling
-      outdoor adventures, our expert team will craft the perfect itinerary
-      tailored just for you.
-    </header>
+
     <nav>
-      Main Navigation
+      <h2>Main Navigation</h2>
       <input type="checkbox" id="dropdown" />
       <label for="dropdown"><span></span></label>
       <ul>
@@ -48,10 +42,23 @@
         <li><a href="#">Contact Us</a></li>
       </ul>
     </nav>
-    <main id="main">
+
+    <header>
+      <h1>Destination Majorca</h1>
+      <p>
+        Let Wonderlust Travel help you plan the trip of your dreams!
+        Specializing in unforgettable experiences, we offer curated trips to the
+        breathtaking island of Majorca, a hidden gem in the Mediterranean.
+        Whether you crave sun-drenched beaches, charming villages, or thrilling
+        outdoor adventures, our expert team will craft the perfect itinerary
+        tailored just for you.
+      </p>
+    </header>
+
+    <main id="main-content">
       <article>
-        <h2>Majorca</h2>
         <section id="intro">
+          <h2>Majorca</h2>
           <p>
             Introduction Imagine an island with turquoise blue waters, secret
             coves, soft golden sands, lush green foliage, rugged mountains,
@@ -60,30 +67,40 @@
             are famous all around the world, making it one of the most
             sought-after summer destinations.
           </p>
-          <div>
-            <!--Responsive Image for Art Direction
+          <picture>
+            <source
+              srcset="images/majorca-beach-vertical-m.jpg"
+              media="(min-width: 920px)"
+            />
+            <source
+              srcset="images/majorca-beach-horizontal-l.jpg"
+              media="(min-width: 1280px)"
+            />
+            <img src="images/majorca-beach-square-s.jpg" alt="Majorca beach" />
+          </picture>
+          <!--Responsive Image for Art Direction
                     images/majorca-beach-square-s.jpg
                     images/majorca-beach-vertical-m.jpg
                     images/majorca-beach-horizontal-l.jpg
 
                     404px, 920px, 1280px
                     -->
-            <small
-              >Photo by
-              <a
-                href="https://unsplash.com/@charliefirth?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                >Charlie Firth</a
-              >
-              on
-              <a
-                href="https://unsplash.com/photos/sea-waves-crashing-on-shore-during-sunset-HQJIQjXq1HI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                >Unsplash</a
-              ></small
+          <small
+            >Photo by
+            <a
+              href="https://unsplash.com/@charliefirth?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              >Charlie Firth</a
             >
-          </div>
+            on
+            <a
+              href="https://unsplash.com/photos/sea-waves-crashing-on-shore-during-sunset-HQJIQjXq1HI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              >Unsplash</a
+            ></small
+          >
         </section>
-        <h2>Plan Your Trip</h2>
+
         <section id="plan-your-trip">
+          <h2>Plan Your Trip</h2>
           <section class="plan">
             <h2>How to Get There</h2>
             <svg
@@ -351,22 +368,21 @@
       <section id="contact-us">
         <h2>Contact Us</h2>
         <span id="required">(*required)</span>
-
         <div>
-          <label>First Name<span>*</span></label>
-          <input />
+          <label for="first-name">First Name<span>*</span></label>
+          <input id="first-name" name="first-name" type="text" required />
         </div>
         <div>
-          <label>Last Name<span>*</span></label>
-          <input />
+          <label for="last-name">Last Name<span>*</span></label>
+          <input id="last-name" name="last-name" type="text" required />
         </div>
         <div>
-          <label>Email<span>*</span></label>
-          <input />
+          <label for="email">Email<span>*</span></label>
+          <input id="email" name="email" type="text" required />
         </div>
         <div>
-          <label>Phone<span>*</span></label>
-          <input />
+          <label for="phone">Phone<span>*</span></label>
+          <input id="phone" name="phone" type="number" required />
         </div>
         <fieldset id="preferred-contact">
           <legend>Preferred Contact Method<span>*</span></legend>
