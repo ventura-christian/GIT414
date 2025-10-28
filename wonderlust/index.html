@@ -3,10 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="author" content="Christian Ventura" />
+    <meta
+      name="description"
+      content="This project focuses on building a fully semantic and accessible HTML5 page from provided instructions and code from the professor. The goal is to apply best practices in web accessibility and semantic structure as covered in this module."
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Wonderlust Travel- Destination Majorca</title>
   </head>
   <body>
+    <a href="#main" class="sr-only">Skip to main content</a>
+    <a href="#plan-your-trip" class="sr-only">Skip to plan your trip</a>
+    <a href="#testimonials" class="sr-only">Skip to testimonials</a>
+    <a href="#about-your-destination" class="sr-only"
+      >Skip to about your destination</a
+    >
+    <a href="#contact-us" class="sr-only">Skip to contact us</a>
     <header>
       Destination Majorca Let Wonderlust Travel help you plan the trip of your
       dreams! Specializing in unforgettable experiences, we offer curated trips
@@ -36,16 +48,18 @@
         <li><a href="#">Contact Us</a></li>
       </ul>
     </nav>
-    <main>
+    <main id="main">
       <article>
-        Majorca
+        <h2>Majorca</h2>
         <section id="intro">
-          Introduction Imagine an island with turquoise blue waters, secret
-          coves, soft golden sands, lush green foliage, rugged mountains,
-          picturesque villages and a vibrant capital city. The island and its
-          capital, Palma, are overflowing with character, while its beaches are
-          famous all around the world, making it one of the most sought-after
-          summer destinations.
+          <p>
+            Introduction Imagine an island with turquoise blue waters, secret
+            coves, soft golden sands, lush green foliage, rugged mountains,
+            picturesque villages and a vibrant capital city. The island and its
+            capital, Palma, are overflowing with character, while its beaches
+            are famous all around the world, making it one of the most
+            sought-after summer destinations.
+          </p>
           <div>
             <!--Responsive Image for Art Direction
                     images/majorca-beach-square-s.jpg
@@ -68,11 +82,10 @@
             >
           </div>
         </section>
+        <h2>Plan Your Trip</h2>
         <section id="plan-your-trip">
-          Plan Your Trip
-
           <section class="plan">
-            How to Get There
+            <h2>How to Get There</h2>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-plane"
@@ -93,7 +106,7 @@
             <a href="#" title="Search for flights">Search Flights</a>
           </section>
           <section class="plan">
-            Places to Stay
+            <h2>Places to Stay</h2>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-bed"
@@ -113,7 +126,7 @@
             <a href="#" title="Search for Hotels">Search Hotels</a>
           </section>
           <section class="plan">
-            Things to do
+            <h2>Things to do</h2>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-sailboat"
@@ -137,7 +150,7 @@
             <a href="#" title="Search for Activities">Search Activity</a>
           </section>
           <section class="plan">
-            Where to Eat
+            <h2>Where to Eat</h2>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-tools-kitchen-2"
@@ -159,7 +172,7 @@
           </section>
         </section>
         <section id="testimonials">
-          Testimonials
+          <h2>Testimonials</h2>
 
           <section>
             <!--Responsive Image for resolution switching
@@ -229,7 +242,7 @@
           </section>
         </section>
         <section id="about-your-destination">
-          About Your Destination
+          <h2>About Your Destination</h2>
 
           <section>
             Size
@@ -336,7 +349,8 @@
     </main>
     <footer>
       <section id="contact-us">
-        Contact Us <span id="required">(*required)</span>
+        <h2>Contact Us</h2>
+        <span id="required">(*required)</span>
 
         <div>
           <label>First Name<span>*</span></label>
@@ -398,7 +412,7 @@
         <input />
       </section>
       <section id="legal">
-        Legal
+        <h2>Legal</h2>
         <small>Copyright 2021 Wonderlust</small>
         <a href="#">Privacy Statement</a>
         <a href="#">Terms of Service</a>
