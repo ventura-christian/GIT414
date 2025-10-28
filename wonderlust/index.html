@@ -67,26 +67,24 @@
             are famous all around the world, making it one of the most
             sought-after summer destinations.
           </p>
-          <picture>
-            <source
-              srcset="images/majorca-beach-vertical-m.jpg"
-              media="(min-width: 920px)"
-            />
-            <source
-              srcset="images/majorca-beach-horizontal-l.jpg"
-              media="(min-width: 1280px)"
-            />
-            <img src="images/majorca-beach-square-s.jpg" alt="Majorca beach" />
-          </picture>
-          <!--Responsive Image for Art Direction
-                    images/majorca-beach-square-s.jpg
-                    images/majorca-beach-vertical-m.jpg
-                    images/majorca-beach-horizontal-l.jpg
-
-                    404px, 920px, 1280px
-                    -->
-          <small
-            >Photo by
+          <figure>
+            <picture>
+              <source
+                srcset="images/majorca-beach-horizontal-l.jpg"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="images/majorca-beach-vertical-m.jpg"
+                media="(min-width: 920px)"
+              />
+              <img
+                src="images/majorca-beach-square-s.jpg"
+                alt="Majorca beach"
+              />
+            </picture>
+          </figure>
+          <figcaption>
+            Photo by
             <a
               href="https://unsplash.com/@charliefirth?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
               >Charlie Firth</a
@@ -95,14 +93,14 @@
             <a
               href="https://unsplash.com/photos/sea-waves-crashing-on-shore-during-sunset-HQJIQjXq1HI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
               >Unsplash</a
-            ></small
-          >
+            >
+          </figcaption>
         </section>
 
         <section id="plan-your-trip">
           <h2>Plan Your Trip</h2>
           <section class="plan">
-            <h2>How to Get There</h2>
+            <h3>How to Get There</h3>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-plane"
@@ -123,7 +121,7 @@
             <a href="#" title="Search for flights">Search Flights</a>
           </section>
           <section class="plan">
-            <h2>Places to Stay</h2>
+            <h3>Places to Stay</h3>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-bed"
@@ -143,7 +141,7 @@
             <a href="#" title="Search for Hotels">Search Hotels</a>
           </section>
           <section class="plan">
-            <h2>Things to do</h2>
+            <h3>Things to do</h3>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-sailboat"
@@ -167,7 +165,7 @@
             <a href="#" title="Search for Activities">Search Activity</a>
           </section>
           <section class="plan">
-            <h2>Where to Eat</h2>
+            <h3>Where to Eat</h3>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-tools-kitchen-2"
@@ -188,26 +186,44 @@
             <a href="#" title="Search for Restaurants">Search Food</a>
           </section>
         </section>
+
         <section id="testimonials">
           <h2>Testimonials</h2>
 
           <section>
-            <!--Responsive Image for resolution switching
-                        images/miranda-blake-L.png" 
-                        images/miranda-blake-S.png 404w
-                        images/miranda-blake-M.png 920w
-                        images/miranda-blake-L.png 1280w
-                    -->
-            <div>
-              Miranda Blake
-              <dl>
-                <dt>Traveling From:</dt>
-                <dd>London, England</dd>
-              </dl>
-              "I traveled here for business, but my stay was extended. Now it is
-              my home."
-            </div>
+            <figure>
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="images/miranda-blake-L.png"
+                />
+                <source
+                  media="(min-width: 920px)"
+                  srcset="images/miranda-blake-M.png"
+                />
+                <source
+                  media="(min-width: 404px)"
+                  srcset="images/miranda-blake-S.png"
+                />
+                <img
+                  src="images/miranda-blake-L.png"
+                  alt="Miranda Blake smiling"
+                />
+              </picture>
+              <figcaption>
+                <strong>Miranda Blake</strong>
+                <dl>
+                  <dt>Traveling From:</dt>
+                  <dd>London, England</dd>
+                </dl>
+                <blockquote>
+                  "I traveled here for business, but my stay was extended. Now
+                  it is my home."
+                </blockquote>
+              </figcaption>
+            </figure>
           </section>
+
           <section>
             <!--Responsive Image for resolution switching
                         images/max-winter-L.png
@@ -225,6 +241,7 @@
               people, great beer."
             </div>
           </section>
+
           <section>
             <!--Responsive Image for resolution switching
                         images/ines-villegoes-L.png
@@ -241,6 +258,7 @@
               "A very safe environment for all travelers."
             </div>
           </section>
+
           <section>
             <!--Responsive Image for resolution switching
                         images/carmen-lorenzo-L.png
@@ -258,6 +276,7 @@
             </div>
           </section>
         </section>
+
         <section id="about-your-destination">
           <h2>About Your Destination</h2>
 
