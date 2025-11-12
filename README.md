@@ -1,7 +1,7 @@
 # GIT414 Website Design/Internet/Web
 
-👽 Student: <em>Christian Ventura</em><br>
-🏛️ University: <em>Arizona State University</em><br>
+👽 **Student:** _Christian Ventura_
+🏛️ **University:** _Arizona State University_
 
 ## 📖 About This Repository
 
@@ -18,6 +18,7 @@ I’ll update this section with assignment titles and links as they are complete
 - 🧭[Phelicia's Photos](./phelicia_photos)
 - 🦥[Wonderlust](./wonderlust)
 - ✨[SEO and Meta Tags](./seo_meta_tags/)
+- 🌍[Limitless Fitness Gym](./limitless_fitness_gym/)
 
 ## 🚀 Goals
 
