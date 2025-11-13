@@ -1,0 +1,68 @@
+:root {
+  --red: #bf3636;
+  --orange: #d04936;
+  --yellow: #ffcc14;
+  --green: #5a5a23;
+  --blue: #303464;
+  --pink: #fe4b7a;
+  --purple: #741a60;
+  --brown: #40130e;
+  --light-gray: #eaeaea;
+  --med-gray: #555;
+  --dark-gray: #222;
+  --white: #fff;
+  color: #222;
+}
+
+body {
+  background-color: var(--light-gray);
+  font-family: Raleway, sans-serif;
+  line-height: 1.3;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 2em auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 1em 0 0.25em 0;
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.instr {
+  padding: 0 1rem;
+  width: calc(100% - 2rem);
+  max-width: 75ch;
+  margin: 0 auto;
+  grid-column: 1/-1;
+}
+
+strong {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+section {
+  width: calc(90% - 1em);
+  max-width: 300px;
+  min-height: 300px;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: white;
+  box-shadow: 5px 5px 5px #aaa;
+}
+
+/* ADD YOUR STYLES BELOW THIS LINE AND DO NOT EDIT THE STYLES ABOVE */

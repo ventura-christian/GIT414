@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="author" content="Christian Ventura" />
+    <title>CSS Refresher</title>
+  </head>
+  <body>
+    <main>
+      <h1>CSS Refresher &amp; Practice</h1>
+      <p class="instr">
+        For this activity, follow the instructions given for each square and
+        style the elements to appear like those shown in the example. You
+        <strong>MAY NOT</strong>
+        alter the HTML in any way for this activity, that means no adding more
+        HTML, no adding classed or id's, or any other attributes. You may only
+        edit the CSS. Do not edit the styles given in the document, and use the
+        CSS variables for the colors when needed rather than using a new color.
+      </p>
+      <section id="section1">
+        <h2>Style the Link to Look Like a Button</h2>
+        <a href="#">Subscribe Now</a>
+      </section>
+      <section id="section2">
+        <h2>Style the Form Elements</h2>
+        <form>
+          <label for="fullName">
+            Full Name (first and last):
+            <span class="required">*</span>
+          </label>
+          <input
+            type="text"
+            name="fullName"
+            id="fullName"
+            autocomplete="name"
+            required
+          />
+
+          <label for="email">
+            Email Address (address@site.com):
+            <span class="required">*</span>
+          </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            autocomplete="email"
+            required
+          />
+          <input
+            type="submit"
+            name="mySubmit"
+            id="mySubmit"
+            value="Submit the Form"
+          />
+        </form>
+      </section>
+      <section id="section3">
+        <h2>Style the Graphic and Text</h2>
+        <img
+          src="https://assets.codepen.io/1351055/web-design.png"
+          alt="vector of webpage with paintbrush laid on top in purples and pinks"
+        />
+        <p>
+          Understanding which elements are
+          <span>inline-level</span>
+          and which elements are
+          <span>block-level</span>
+          elements will make writing CSS much easier for you!
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
