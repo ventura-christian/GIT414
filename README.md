@@ -20,6 +20,7 @@ I’ll update this section with assignment titles and links as they are complete
 - ✨[SEO and Meta Tags](./seo_meta_tags/)
 - 🌍[Limitless Fitness Gym](./limitless_fitness_gym/)
 - 🦑[CSS Refresher](./css_refresher/)
+- 🛰️[Viewport](./viewport/)
 
 ## 🚀 Goals
 
