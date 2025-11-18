@@ -21,6 +21,7 @@ I’ll update this section with assignment titles and links as they are complete
 - 🌍[Limitless Fitness Gym](./limitless_fitness_gym/)
 - 🦑[CSS Refresher](./css_refresher/)
 - 🛰️[Viewport](./viewport/)
+- 🎒[Responsive Styling](./responsive_styling/)
 
 ## 🚀 Goals
 

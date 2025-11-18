@@ -1,0 +1,159 @@
+/* ----- ROOT STYLES AND VARIABLES ----- */
+
+/* Add 	a color variable of 
+--dark-gray: #222;
+
+and a font variable of
+
+	--fonts: Arial, Verdana, sans-serif;
+
+to the :root selector
+*/
+
+:root {
+  --teal: #036f8c;
+  --pink: #f2af98;
+
+  font-size: 16px;
+}
+
+/* ----- BODY STYLES ----- */
+
+/* Add 	a color variable of 
+color: var(--dark-gray);
+
+to the body selector
+*/
+
+body {
+  box-sizing: border-box;
+  line-height: 1.35;
+  font-family: var(--fonts);
+}
+
+/* ----- SKIP LINK STYLES ----- */
+#skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Add 	selctor to target the skip ID in the pseudo state of focus */
+
+ {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+/* ----- HEADER STYLES ----- */
+header {
+  padding: 1rem;
+  border-bottom: 0.25rem solid var(--pink);
+}
+
+/* ----- HEADING STYLES ----- */
+h1,
+h2 {
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+/* ----- NAV LINK STYLES ----- */
+nav a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--teal);
+  color: white;
+  font-weight: bold;
+  margin: 0.5rem auto;
+  border-radius: 0.5rem;
+  width: calc(100% - 2rem);
+  max-width: 350px;
+}
+nav ul {
+  list-style: none;
+}
+
+/* ----- MAIN SECTiON STYLES ----- */
+main section {
+  padding: 1rem;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ----- IMAGE STYLES ----- */
+img {
+  display: block;
+  width: 100%;
+}
+
+/* ----- TEXT STYLES ----- */
+p {
+  width: 100%;
+  max-width: 65ch;
+  margin: 1rem auto;
+}
+
+/* ----- FOOTER STYLES ----- */
+footer {
+  padding: 1rem;
+  border-top: 0.25rem solid var(--pink);
+}
+
+footer section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+  justify-items: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+footer a {
+  font-size: 3rem;
+  color: var(--teal);
+}
+
+/* ----- HOVER STYLES ----- */
+@media (hover: hover) {
+  nav a:hover {
+    background-color: var(--pink);
+    color: var(--dark-gray);
+  }
+
+  footer a:hover {
+    color: var(--pink);
+  }
+}
+
+/* ----- TABLET SCREEN WIDTHS ----- */
+@media screen and (min-width: 600px) {
+  /* ----- NAV STYLES ----- */
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+}
