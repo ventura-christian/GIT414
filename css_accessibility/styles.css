@@ -1,19 +1,31 @@
-/* Use @import to connect with any variable on https://fonts.google.com/ */
-/* TO-DO */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,wdth,GRAD,slnt@8..144,100..1000,25..151,-200..200,-10..0&display=swap");
 
 /* You can use the root element to store variables if you want - great for colors */
 :root {
   --light-gray: #eaeaea;
   --white: #fff;
   --black: #000;
-  font-size: 16px;
+  --aaa-bg: #d11c1c;
+  --aaa-text: #3fc30b;
+  --aa-bg: #1440d1;
+  --aa-text: #b610cc;
+  --low-bg: #ed920a;
+  --low-text: #17f5f9;
+  --fonts: "Roboto Flex", sans-serif;
+  /* --font-size: 16px; */
+}
+
+html,
+body {
+  font-family: var(--fonts);
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background-color: var(--light-gray);
   line-height: 1.35;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 /* ----- MAIN STYLES ----- */
@@ -31,8 +43,15 @@ main {
   padding: 0.5rem;
 }
 
-/* Style the span in #breadcumbs to be hidden from visual, but accessible to screenreaders (see the article in the required reading for this module about hiding content accessibly) */
-/* TO-DO */
+#breadcrumbs span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+}
 
 /* -----HEADER STYLES----- */
 header {
@@ -48,16 +67,42 @@ h2 {
 h1 {
   font-size: 2rem;
   margin: 1rem 0;
-  font-weight: bold;
+  font-variation-settings: "wght" 700;
 }
 
 h2 {
   font-size: 1.5rem;
   margin: 0.75rem 0;
+  font-variation-settings: "wght" 500;
 }
 
-/* Using your chosen variable font, give each of the nine section headings a different combinations of values for the 5 possible axes and their fallbacks */
-/* TO-DO */
+section:nth-of-type(1) h2 {
+  font-variation-settings: "wght" 300, "wdth" 95, "opsz" 18;
+}
+section:nth-of-type(2) h2 {
+  font-variation-settings: "wght" 350, "wdth" 110, "opsz" 20;
+}
+section:nth-of-type(3) h2 {
+  font-variation-settings: "wght" 450, "wdth" 130, "opsz" 22;
+}
+section:nth-of-type(4) h2 {
+  font-variation-settings: "wght" 500, "wdth" 100, "opsz" 26;
+}
+section:nth-of-type(5) h2 {
+  font-variation-settings: "wght" 600, "wdth" 120, "opsz" 30;
+}
+section:nth-of-type(6) h2 {
+  font-variation-settings: "wght" 700, "wdth" 85, "opsz" 36;
+}
+section:nth-of-type(7) h2 {
+  font-variation-settings: "wght" 800, "wdth" 100, "opsz" 42;
+}
+section:nth-of-type(8) h2 {
+  font-variation-settings: "wght" 850, "wdth" 140, "opsz" 48;
+}
+section:nth-of-type(9) h2 {
+  font-variation-settings: "wght" 900, "wdth" 90, "opsz" 60;
+}
 
 /* ----- TEXT STYLES ----- */
 p {
@@ -100,29 +145,65 @@ footer {
   text-align: center;
 }
 
-/* Style buttons in sections 1, 2, 3 with high priority button sizes and large button spacing */
-/* TO-DO */
+section:nth-of-type(1) button,
+section:nth-of-type(2) button,
+section:nth-of-type(3) button {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 1rem auto;
+}
 
-/* Style buttons in sections 4, 5, 6 with meduim priority button sizes and medium button spacing */
-/* TO-DO */
+section:nth-of-type(4) button,
+section:nth-of-type(5) button,
+section:nth-of-type(6) button {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0.75rem auto;
+}
 
-/* Style buttons in sections 7, 8, 9 with low priority button sizes and small button spacing */
-/* TO-DO */
+section:nth-of-type(7) button,
+section:nth-of-type(8) button,
+section:nth-of-type(9) button {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin: 0.25rem auto;
+}
 
-/* Style buttons in sections 1, 4, 7 with high contrasting buttons (meet at least AAA for contrast) */
-/* TO-DO */
+section:nth-of-type(1) button,
+section:nth-of-type(4) button,
+section:nth-of-type(7) button {
+  background-color: var(--aaa-bg);
+  color: var(--aaa-text);
+}
 
-/* Style buttons in sections 2, 5, 8 with medium contrasting buttons (meet at least AA for contrast) */
-/* TO-DO */
+section:nth-of-type(2) button,
+section:nth-of-type(5) button,
+section:nth-of-type(8) button {
+  background-color: var(--aa-bg);
+  color: var(--aa-text);
+}
 
-/* Style buttons in sections 3, 6, 9 with low contrasting buttons (below AA for contrast) */
-/* TO-DO */
+section:nth-of-type(3) button,
+section:nth-of-type(6) button,
+section:nth-of-type(9) button {
+  background-color: var(--low-bg);
+  color: var(--low-text);
+}
 
-/* Style buttons in sections 1, 4, 7 with the grab cursor on hover */
-/* TO-DO */
+section:nth-of-type(1) button:hover,
+section:nth-of-type(4) button:hover,
+section:nth-of-type(7) button:hover {
+  cursor: grab;
+}
 
-/* Style buttons in sections 2, 5, 8 with wait cursor buttons */
-/* TO-DO */
+section:nth-of-type(2) button:hover,
+section:nth-of-type(5) button:hover,
+section:nth-of-type(8) button:hover {
+  cursor: wait;
+}
 
-/* Style buttons in sections 3, 6, 9 with not-allowed cursor buttons */
-/* TO-DO */
+section:nth-of-type(3) button:hover,
+section:nth-of-type(6) button:hover,
+section:nth-of-type(9) button:hover {
+  cursor: not-allowed;
+}
