@@ -1,0 +1,128 @@
+/* Use @import to connect with any variable on https://fonts.google.com/ */
+/* TO-DO */
+
+/* You can use the root element to store variables if you want - great for colors */
+:root {
+  --light-gray: #eaeaea;
+  --white: #fff;
+  --black: #000;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--light-gray);
+  line-height: 1.35;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* ----- MAIN STYLES ----- */
+main {
+  padding: 0 0.25rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ----- BREADCRUMBS STYLES ----- */
+#breadcrumbs {
+  padding: 0.5rem;
+}
+
+/* Style the span in #breadcumbs to be hidden from visual, but accessible to screenreaders (see the article in the required reading for this module about hiding content accessibly) */
+/* TO-DO */
+
+/* -----HEADER STYLES----- */
+header {
+  padding: 1rem;
+}
+
+/* -----HEADING STYLES----- */
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0.75rem 0;
+}
+
+/* Using your chosen variable font, give each of the nine section headings a different combinations of values for the 5 possible axes and their fallbacks */
+/* TO-DO */
+
+/* ----- TEXT STYLES ----- */
+p {
+  max-width: 65ch;
+  margin: 0 auto;
+}
+
+/* -----LIST STYLES----- */
+ol {
+  list-style-type: decimal;
+  padding-left: 2rem;
+  max-width: 65ch;
+  margin: 0 auto;
+}
+
+/* -----SECTION STYLES----- */
+section {
+  background-color: var(--white);
+  border: 1px solid #000000;
+  margin: 0.25rem auto;
+  padding: 0.5rem;
+  width: calc(100% - 2rem);
+  max-width: 400px;
+}
+
+/* ----- BUTTON STYLES ----- */
+button {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 auto;
+  border: none;
+  padding: 0.25rem;
+  border-radius: 50%;
+  background-color: var(--light-gray);
+}
+
+/* ----- FOOTER STYLES ----- */
+footer {
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Style buttons in sections 1, 2, 3 with high priority button sizes and large button spacing */
+/* TO-DO */
+
+/* Style buttons in sections 4, 5, 6 with meduim priority button sizes and medium button spacing */
+/* TO-DO */
+
+/* Style buttons in sections 7, 8, 9 with low priority button sizes and small button spacing */
+/* TO-DO */
+
+/* Style buttons in sections 1, 4, 7 with high contrasting buttons (meet at least AAA for contrast) */
+/* TO-DO */
+
+/* Style buttons in sections 2, 5, 8 with medium contrasting buttons (meet at least AA for contrast) */
+/* TO-DO */
+
+/* Style buttons in sections 3, 6, 9 with low contrasting buttons (below AA for contrast) */
+/* TO-DO */
+
+/* Style buttons in sections 1, 4, 7 with the grab cursor on hover */
+/* TO-DO */
+
+/* Style buttons in sections 2, 5, 8 with wait cursor buttons */
+/* TO-DO */
+
+/* Style buttons in sections 3, 6, 9 with not-allowed cursor buttons */
+/* TO-DO */

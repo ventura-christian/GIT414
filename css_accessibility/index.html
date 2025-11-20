@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Christian Ventura" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Responsive Styling and Accessibility</title>
+  </head>
+  <body>
+    <div id="breadcrumbs">
+      <span>You are here:</span>
+      <a href="#">Activity</a>
+      <a href="#">Module 4</a>
+      Responsive Styling and Accessibility
+    </div>
+
+    <header>
+      <h1>Responsive Styling and Accessibility</h1>
+      <p>
+        In this activity, you'll be styling each of the nine section headings
+        below with different combinations of values for the 5 possible axes with
+        fallbacks. Additionally, you'll be styling each of the nine container's
+        buttons with different combinations of the styles listed below.
+      </p>
+      <ol>
+        <li>Accessible Sizes</li>
+        <li>Constrast Color Palettes</li>
+        <li>Pointer Events</li>
+      </ol>
+    </header>
+    <main>
+      <section id="section1">
+        <h2>Variable Font 1</h2>
+        <ol>
+          <li>High priority buttons/min spacing</li>
+          <li>High Contrast buttons</li>
+          <li>Grab cursor on button hover</li>
+        </ol>
+        <button class="highPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+        <button class="highPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+        <button class="highPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+      </section>
+      <section id="section2">
+        <h2>Variable Font 2</h2>
+        <ol>
+          <li>High priority buttons/min spacing</li>
+          <li>Medium Contrast buttons</li>
+          <li>Wait cursor on button hover</li>
+        </ol>
+        <button class="highPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+        <button class="highPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+        <button class="highPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+      </section>
+      <section id="section3">
+        <h2>Variable Font 3</h2>
+        <ol>
+          <li>High priority buttons/min spacing</li>
+          <li>Low Contrast buttons</li>
+          <li>Not-allowed cursor on button hover</li>
+        </ol>
+        <button class="highPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+        <button class="highPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+        <button class="highPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+      </section>
+      <section id="section4">
+        <h2>Variable Font 4</h2>
+        <ol>
+          <li>Medium priority buttons</li>
+          <li>High Contrast buttons</li>
+          <li>Grab cursor on button hover</li>
+        </ol>
+        <button class="mediumPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+        <button class="mediumPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+        <button class="mediumPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+      </section>
+      <section id="section5">
+        <h2>Variable Font 5</h2>
+        <ol>
+          <li>Medium priority buttons</li>
+          <li>Medium Contrast buttons</li>
+          <li>Wait cursor on button hover</li>
+        </ol>
+        <button class="mediumPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+        <button class="mediumPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+        <button class="mediumPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+      </section>
+      <section id="section6">
+        <h2>Variable Font 6</h2>
+        <ol>
+          <li>Medium priority buttons</li>
+          <li>Low Contrast buttons</li>
+          <li>Not-allowed cursor on button hover</li>
+        </ol>
+        <button class="mediumPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+        <button class="mediumPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+        <button class="mediumPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+      </section>
+      <section id="section7">
+        <h2>Variable Font 7</h2>
+        <ol>
+          <li>Low priority buttons</li>
+          <li>High Contrast buttons</li>
+          <li>Grab cursor on button hover</li>
+        </ol>
+        <button class="lowPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+        <button class="lowPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+        <button class="lowPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+      </section>
+      <section id="section8">
+        <h2>Variable Font 8</h2>
+        <ol>
+          <li>Low priority buttons</li>
+          <li>Medium Contrast buttons</li>
+          <li>Wait cursor on button hover</li>
+        </ol>
+        <button class="lowPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+        <button class="lowPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+        <button class="lowPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+      </section>
+      <section id="section9">
+        <h2>Variable Font 9</h2>
+        <ol>
+          <li>Low priority buttons</li>
+          <li>Low Contrast buttons</li>
+          <li>No-allowed cursor on button hover</li>
+        </ol>
+        <button class="lowPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+        <button class="lowPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+        <button class="lowPriority">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </button>
+      </section>
+    </main>
+    <footer>
+      <small>&copy; 2021 For Educational Purposes Only.</small>
+    </footer>
+  </body>
+</html>

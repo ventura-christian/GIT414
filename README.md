@@ -22,6 +22,7 @@ I’ll update this section with assignment titles and links as they are complete
 - 🦑[CSS Refresher](./css_refresher/)
 - 🛰️[Viewport](./viewport/)
 - 🎒[Responsive Styling](./responsive_styling/)
+- 🌑[CSS Accessibility](./css_accessibility/)
 
 ## 🚀 Goals
 
