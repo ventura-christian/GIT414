@@ -1,0 +1,517 @@
+:root {
+  font-size: 16px;
+  --fonts: Montserrat, sans-serif;
+  --light-gray: #eaeaea;
+  --med-gray: #555;
+  --white: #fff;
+  /*  color palette from: https://color.adobe.com/Colliding-Power-color-theme-7210405/ */
+  --dune: #363432;
+  --blumine: #196774;
+  --pewter: #90a19d;
+  --carrot-orange: #f0941f;
+  --flamingo: #ef6024;
+  --box-shadow: -0.5rem 0.5rem 1rem var(--med-gray);
+  --small-shadow: -0.25rem 0.25rem 0.5rem var(--med-gray);
+  --filter-shadow: drop-shadow(-0.5rem 0.5rem 0.5rem var(--med-gray));
+}
+
+/* ----- SKIP LINK STYLES ----- */
+/* skip link styles from: https://webaim.org/techniques/css/invisiblecontent/ */
+#skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+#skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+/* ----- BODY STYLES ----- */
+
+body {
+  font-family: var(--fonts);
+  color: var(--dune);
+  line-height: 1.35;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ----- HEADER STYLES ----- */
+
+header {
+  background-color: var(--blumine);
+  color: var(--white);
+  padding: 1rem;
+  width: calc(100% - 2rem);
+}
+
+header div {
+  max-width: 1200px;
+  margin: 0 auto;
+  /*
+  SET DISPLAY TO GRID
+  ADD A GRAD TEMPLATE FOR COLUMNS OF 1fr 3fr
+  APPPLY A GRID GAP OF 0.5REM
+*/
+  align-items: center;
+}
+
+.logo {
+  padding: 0.5rem;
+}
+
+header svg {
+  fill: var(--white);
+  width: 100%;
+  max-width: 125px;
+}
+
+/* ----- HEADING STYLES ----- */
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-top: 0.25rem solid var(--carrot-orange);
+  border-bottom: 0.25rem solid var(--carrot-orange);
+}
+
+h3 {
+  font-size: 1.15rem;
+  margin: 0.5rem 0;
+}
+
+h2,
+h3 {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ----- HIDDEN CONTENT STYLES ----- */
+
+/* hidden heading styles from: https://webaim.org/techniques/css/invisiblecontent/ */
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* ----- NAVIGATION STYLES ----- */
+
+nav {
+  /*
+  SET GRID COLUMN TO START IN 1 AND END IN -1
+*/
+}
+
+nav a {
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: var(--white);
+  color: var(--carrot-orange);
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 0.25rem;
+}
+nav li {
+  list-style: none;
+}
+
+/* ----- LINK STYLES ----- */
+
+a {
+  display: block;
+  padding: 1rem;
+}
+
+/* ----- IMAGE STYLES ----- */
+
+img {
+  display: block;
+  margin: 0 auto;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.25rem;
+}
+
+/* ----- TEXT STYLES ----- */
+
+em {
+  font-style: italic;
+}
+
+p {
+  line-height: 1.35;
+  max-width: 75ch;
+  padding: 0.5rem 0;
+  margin: 0 auto;
+}
+
+/* ----- MAIN STYLES ----- */
+
+main {
+  width: calc(100% - 2rem);
+  max-width: 1100px;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+main section {
+  margin: 1rem auto;
+}
+
+/* ----- WELCOME SECTION STYLES ----- */
+
+#welcome h2 {
+  margin-bottom: 0;
+}
+
+#welcome img {
+  width: 100%;
+}
+
+/* ----- RECIPES SECTION STYLES ----- */
+
+#recipes section {
+  max-width: 350px;
+  margin: 0 auto 3rem auto;
+}
+
+#recipes h3 {
+  padding: 0.5rem;
+  border-radius: 0.25rem 0.25rem 0 0;
+  background-color: var(--dune);
+  color: var(--white);
+  margin-bottom: 0;
+}
+
+#recipes img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#recipes p {
+  padding: 1rem;
+  background-color: var(--dune);
+  color: var(--white);
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+
+#recipes a {
+  background-color: var(--flamingo);
+  color: var(--white);
+  width: fit-content;
+  text-decoration: none;
+  margin: 0.5rem auto;
+  border-radius: 0.25rem;
+  box-shadow: var(--box-shadow);
+  font-weight: bold;
+}
+
+/* ----- ABOUT SECTION STYLES ----- */
+
+#about {
+  /*  
+  SET DISPLAY TO GRID
+  ADD A TEMPLATE FOR GRID COLUMNS OF 1FR 1FR
+  SET THE GRID GAP TO .5REM
+*/
+}
+
+#about h2,
+#about p {
+  /*  
+  START THE GRID COLUMN IN 1 AND END IT IN -1
+*/
+  padding: 0;
+}
+
+#about img {
+  display: block;
+  width: 75%;
+  max-width: 150px;
+  margin: 0 auto;
+  box-shadow: none;
+  filter: var(--filter-shadow);
+}
+
+/* ----- FOOTER STYLES ----- */
+
+footer {
+  background-color: var(--blumine);
+  color: var(--white);
+  padding: 2rem 1rem 1rem 1rem;
+  line-height: 2;
+}
+
+footer section {
+  max-width: 300px;
+  margin: 2rem auto 1rem auto;
+}
+
+footer section:last-of-type {
+  /*  
+  ADD A DISPLAY TO GRID
+  SET THE GRID TEMPLATE TO 1FR 1FR 1FR FOR COLUMNS
+  APPLY A GRID GAP OF 0.5REM
+  JUSTIFY THE ITEMS TO THE CENTER
+*/
+}
+
+footer h2 {
+  /*  
+  START THE GRID COLUMN AT 1 AND END IT AT -1
+*/
+  border-top: none;
+  border-bottom: none;
+}
+
+footer img {
+  display: block;
+  width: 100%;
+  max-width: 50px;
+  margin: 0 auto;
+}
+
+footer span {
+  display: block;
+  padding: 0.25rem 0;
+}
+
+footer a {
+  padding: 0.5rem 0;
+  color: var(--white);
+}
+
+footer p {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.desktop {
+  display: none;
+}
+
+/* ----- HOVER STYLES ----- */
+@media (hover: hover) {
+  nav a:hover {
+    background-color: var(--carrot-orange);
+    color: var(--white);
+  }
+
+  header svg:hover {
+    fill: var(--carrot-orange);
+  }
+
+  #recipes a:hover {
+    background-color: var(--blumine);
+  }
+
+  footer a:hover {
+    color: var(--carrot-orange);
+  }
+
+  footer svg:hover {
+    stroke: var(--carrot-orange);
+  }
+}
+
+/* ----- SMALL SCREEN STYLES ----- */
+@media screen and (min-width: 500px) {
+  header div {
+    /*   
+    SET A TEMPLATE FOR COLUMNS TO 1FR 4FR
+    ALIGN THE ITEMS TO THE CENTER
+    ADD A COLUMN GAP OF 1REM
+*/
+  }
+
+  h1 {
+    text-align: left;
+    font-size: 3rem;
+  }
+
+  nav ul {
+    /*    
+    SET DISPLAY TO GRID
+    ADD A GRID TEMPLATE FOR COLUMNS OF 1FR 1FR 1FR
+    ADD A GRID GAP OF .5REM
+*/
+  }
+}
+
+/* ----- MEDIUM SCREEN STYLES ----- */
+@media screen and (min-width: 650px) {
+  h1 {
+    margin-left: 3rem;
+  }
+
+  #welcome img {
+    margin-bottom: 3rem;
+  }
+
+  #recipes {
+    /*  
+    SET THE DISPLAY TO GRID
+    ADD A GRID TEMPLATE FOR COLUMNS OF 1FR 1FR 1FR
+    ADD A GRID GAP OF .5REM
+  */
+  }
+
+  #recipes h2 {
+    /*  
+    START THE GRID COLUMN IN 1 AND END IT IN -1
+  */
+  }
+
+  #recipes section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--dune);
+    border-radius: 0.25rem;
+    box-shadow: var(--box-shadow);
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+
+  #recipes a {
+    box-shadow: none;
+  }
+
+  #about {
+    /*  
+    ADD A GRID TEMPLATE FOR COLUMNS OF 1FR 1FR 1FR 1FR
+  */
+  }
+
+  #about p:first-of-type {
+    /*  
+    START THE GRID COLUMN IN 1 AND END IN 3
+  */
+  }
+
+  #about p:last-of-type {
+    /*  
+    START THE GRID COLUMN IN 3 AND SPAN FOR 2 COLUMNS
+  */
+  }
+
+  footer div {
+    /*  
+    SET THE DISPLAY TO GRID
+    ADD A GRID COLUMN TEMPLATE OF 1FR 1FR
+    ADD A GRID GAP OF 1rem
+  */
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+}
+
+/* ----- MEDIUM SCREEN STYLES ----- */
+@media screen and (min-width: 750px) {
+  #welcome {
+    /*  
+    SET THE DISPLAY TO GRID
+    ADD A GRID COLUMN TEMPLATE OF 1FR 1FR 1FR
+    ADD A GRID GAP OF 1rem
+  */
+  }
+
+  #welcome h2,
+  #welcome img {
+    /*  
+    START THE GRID COLUMN IN 1 AND END IT IN -1
+  */
+  }
+
+  #welcome img {
+    margin-bottom: 0;
+  }
+
+  #recipes {
+    /*  
+    ADD A GRID COLUMN TEMPLATE THAT REPEATS 1FR THREE TIMES
+  */
+  }
+}
+
+/* ----- LARGE SCREEN STYLES ----- */
+@media screen and (min-width: 980px) {
+  footer a,
+  footer span {
+    padding: 0;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
+
+/* ----- EXTRA LARGE SCREEN STYLES ----- */
+@media screen and (min-width: 1250px) {
+  header div {
+    /*
+    SET THE DISPLAY TO GRID
+    ADD A GRID COLUMN TEMPLATE OF 1FR 3FR 3FR
+    ADD A GRID GAP OF 0rem
+ */
+  }
+
+  nav {
+    /*   
+    SET GRID COLUMN TO AUTO
+ */
+  }
+
+  nav ul {
+    /*   
+    SETT GAP TO 1REM
+ */
+  }
+
+  main > section {
+    margin-bottom: 3rem;
+  }
+
+  main h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.15rem;
+  }
+}

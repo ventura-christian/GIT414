@@ -17,12 +17,13 @@ I’ll update this section with assignment titles and links as they are complete
 - 🗿[Accessible Forms](./accessible_forms)
 - 🧭[Phelicia's Photos](./phelicia_photos)
 - 🦥[Wonderlust](./wonderlust)
-- ✨[SEO and Meta Tags](./seo_meta_tags/)
-- 🌍[Limitless Fitness Gym](./limitless_fitness_gym/)
-- 🦑[CSS Refresher](./css_refresher/)
-- 🛰️[Viewport](./viewport/)
-- 🎒[Responsive Styling](./responsive_styling/)
-- 🌑[CSS Accessibility](./css_accessibility/)
+- ✨[SEO and Meta Tags](./seo_meta_tags)
+- 🌍[Limitless Fitness Gym](./limitless_fitness_gym)
+- 🦑[CSS Refresher](./css_refresher)
+- 🛰️[Viewport](./viewport)
+- 🎒[Responsive Styling](./responsive_styling)
+- 🌑[CSS Accessibility](./css_accessibility)
+- 🧿[Grid](./grid)
 
 ## 🚀 Goals
 
