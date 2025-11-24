@@ -1,9 +1,17 @@
-/* CSS by ///ADD/// YOUR NAME */
+/* CSS by Christian Ventura */
 
 /* Imported Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wdth,wght@0,18..144,87..112,300..900;1,18..144,87..112,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 
-/* ///ADD/// CSS Reset */
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
 
 /* Root Variables */
 :root {
@@ -37,22 +45,83 @@ body.dark-mode {
   cursor: pointer;
 }
 
-/* ///ADD/// Skip Link Styles */
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--watchdog-white);
+  color: var(--truth-text);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  transition: top 0.3s;
+}
 
-/* ///ADD/// Navigation Styles */
+.skip-lin:focus {
+  top: 0;
+}
 
-/* ///ADD/// Global Layout Styles */
+/* Navigation */
+.mobile-nav .menu {
+  display: none;
+}
 
-/* ///ADD/// Global Text Styles */
+#menu-toggle:checked + .menu-button + .menu {
+  display: block;
+}
 
-/* ///ADD/// medium styles 620px */
+/* Layout & Typography */
+body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
 
-/* ///ADD/// large styles 920px */
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+}
 
-/* ///ADD/// x-large styles 1024px */
+/* Media Queries */
+@media (min-width: 620px) {
+  .mobile-nav .menu {
+    display: flex;
+    gap: 1rem;
+  }
+}
 
-/* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
+@media (min-width: 920px) {
+  main {
+    width: 80%;
+    margin: auto;
+  }
+}
 
-/* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
-@supports (selector(:has(*))) {
+@media (min-width: 1024px) {
+  header,
+  footer {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+/* Interactive Queries */
+@media (prefers-color-scheme: dark) {
+  body:not(.light-mode) {
+    background: var(--truth-text);
+    color: var(--watchdog-white);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
+
+/* Feature Query */
+@supports (selector(: has(*))) {
+  body:has(#menu-toggle:checked) {
+    background-color: var(--story-subtitle);
+  }
 }
