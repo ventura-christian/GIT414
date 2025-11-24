@@ -4,7 +4,6 @@
   --light-gray: #eaeaea;
   --med-gray: #555;
   --white: #fff;
-  /*  color palette from: https://color.adobe.com/Colliding-Power-color-theme-7210405/ */
   --dune: #363432;
   --blumine: #196774;
   --pewter: #90a19d;
@@ -16,7 +15,6 @@
 }
 
 /* ----- SKIP LINK STYLES ----- */
-/* skip link styles from: https://webaim.org/techniques/css/invisiblecontent/ */
 #skip {
   position: absolute;
   left: -10000px;
@@ -55,11 +53,9 @@ header {
 header div {
   max-width: 1200px;
   margin: 0 auto;
-  /*
-  SET DISPLAY TO GRID
-  ADD A GRAD TEMPLATE FOR COLUMNS OF 1fr 3fr
-  APPPLY A GRID GAP OF 0.5REM
-*/
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 0.5rem;
   align-items: center;
 }
 
@@ -103,7 +99,6 @@ h3 {
 
 /* ----- HIDDEN CONTENT STYLES ----- */
 
-/* hidden heading styles from: https://webaim.org/techniques/css/invisiblecontent/ */
 .sr-only {
   position: absolute;
   left: -10000px;
@@ -116,9 +111,7 @@ h3 {
 /* ----- NAVIGATION STYLES ----- */
 
 nav {
-  /*
-  SET GRID COLUMN TO START IN 1 AND END IN -1
-*/
+  grid-column: 1 / -1;
 }
 
 nav a {
@@ -232,18 +225,14 @@ main section {
 /* ----- ABOUT SECTION STYLES ----- */
 
 #about {
-  /*  
-  SET DISPLAY TO GRID
-  ADD A TEMPLATE FOR GRID COLUMNS OF 1FR 1FR
-  SET THE GRID GAP TO .5REM
-*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
 }
 
 #about h2,
 #about p {
-  /*  
-  START THE GRID COLUMN IN 1 AND END IT IN -1
-*/
+  grid-column: 1 / -1;
   padding: 0;
 }
 
@@ -271,18 +260,14 @@ footer section {
 }
 
 footer section:last-of-type {
-  /*  
-  ADD A DISPLAY TO GRID
-  SET THE GRID TEMPLATE TO 1FR 1FR 1FR FOR COLUMNS
-  APPLY A GRID GAP OF 0.5REM
-  JUSTIFY THE ITEMS TO THE CENTER
-*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+  justify-items: center;
 }
 
 footer h2 {
-  /*  
-  START THE GRID COLUMN AT 1 AND END IT AT -1
-*/
+  grid-column: 1 / -1;
   border-top: none;
   border-bottom: none;
 }
@@ -340,11 +325,10 @@ footer p {
 /* ----- SMALL SCREEN STYLES ----- */
 @media screen and (min-width: 500px) {
   header div {
-    /*   
-    SET A TEMPLATE FOR COLUMNS TO 1FR 4FR
-    ALIGN THE ITEMS TO THE CENTER
-    ADD A COLUMN GAP OF 1REM
-*/
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    column-gap: 1rem;
   }
 
   h1 {
@@ -353,11 +337,9 @@ footer p {
   }
 
   nav ul {
-    /*    
-    SET DISPLAY TO GRID
-    ADD A GRID TEMPLATE FOR COLUMNS OF 1FR 1FR 1FR
-    ADD A GRID GAP OF .5REM
-*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
   }
 }
 
@@ -372,17 +354,13 @@ footer p {
   }
 
   #recipes {
-    /*  
-    SET THE DISPLAY TO GRID
-    ADD A GRID TEMPLATE FOR COLUMNS OF 1FR 1FR 1FR
-    ADD A GRID GAP OF .5REM
-  */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
   }
 
   #recipes h2 {
-    /*  
-    START THE GRID COLUMN IN 1 AND END IT IN -1
-  */
+    grid-column: 1 / -1;
   }
 
   #recipes section {
@@ -401,29 +379,21 @@ footer p {
   }
 
   #about {
-    /*  
-    ADD A GRID TEMPLATE FOR COLUMNS OF 1FR 1FR 1FR 1FR
-  */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   #about p:first-of-type {
-    /*  
-    START THE GRID COLUMN IN 1 AND END IN 3
-  */
+    grid-column: 1 / 3;
   }
 
   #about p:last-of-type {
-    /*  
-    START THE GRID COLUMN IN 3 AND SPAN FOR 2 COLUMNS
-  */
+    grid-column: 3 / span 2;
   }
 
   footer div {
-    /*  
-    SET THE DISPLAY TO GRID
-    ADD A GRID COLUMN TEMPLATE OF 1FR 1FR
-    ADD A GRID GAP OF 1rem
-  */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
     max-width: 1000px;
     margin: 0 auto;
   }
@@ -440,18 +410,14 @@ footer p {
 /* ----- MEDIUM SCREEN STYLES ----- */
 @media screen and (min-width: 750px) {
   #welcome {
-    /*  
-    SET THE DISPLAY TO GRID
-    ADD A GRID COLUMN TEMPLATE OF 1FR 1FR 1FR
-    ADD A GRID GAP OF 1rem
-  */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
   }
 
   #welcome h2,
   #welcome img {
-    /*  
-    START THE GRID COLUMN IN 1 AND END IT IN -1
-  */
+    grid-column: 1 / -1;
   }
 
   #welcome img {
@@ -459,9 +425,7 @@ footer p {
   }
 
   #recipes {
-    /*  
-    ADD A GRID COLUMN TEMPLATE THAT REPEATS 1FR THREE TIMES
-  */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -484,23 +448,17 @@ footer p {
 /* ----- EXTRA LARGE SCREEN STYLES ----- */
 @media screen and (min-width: 1250px) {
   header div {
-    /*
-    SET THE DISPLAY TO GRID
-    ADD A GRID COLUMN TEMPLATE OF 1FR 3FR 3FR
-    ADD A GRID GAP OF 0rem
- */
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    gap: 0;
   }
 
   nav {
-    /*   
-    SET GRID COLUMN TO AUTO
- */
+    grid-column: auto;
   }
 
   nav ul {
-    /*   
-    SETT GAP TO 1REM
- */
+    gap: 1rem;
   }
 
   main > section {
