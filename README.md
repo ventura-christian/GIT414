@@ -24,6 +24,7 @@ I’ll update this section with assignment titles and links as they are complete
 - 🎒[Responsive Styling](./responsive_styling)
 - 🌑[CSS Accessibility](./css_accessibility)
 - 🧿[Grid](./grid)
+- 🌩️[Civic Lens](./civic_lens/)
 
 ## 🚀 Goals
 
