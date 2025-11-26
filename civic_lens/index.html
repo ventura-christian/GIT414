@@ -17,6 +17,8 @@
     <meta property="og:image" content="https://example.com/og-image.jpg" />
     <meta property="og:url" content="https://example.com" />
     <meta property="og:type" content="website" />
+    <meta name="keywords" content="news, journalism, civic news, reporting" />
+    <meta name="robots" content="index, follow" />
     <link rel="stylesheet" href="styles.css" />
     <title>Civic Lens</title>
   </head>
@@ -31,9 +33,9 @@
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
-          <clipath id="a">
+          <clipPath id="a">
             <path d="m18.512 18.512h62.977v62.977h-62.977z" />
-          </clipath>
+          </clipPath>
         </defs>
         <g clip-path="url(#a)">
           <path
@@ -53,7 +55,7 @@
         <label for="menu-toggle" class="menu-button">Menu</label>
         <ul class="menu">
           <li><a href="#breaking-news">Breaking News</a></li>
-          <li><a href="#featured-aticles">Featured Articles</a></li>
+          <li><a href="#featured-articles">Featured Articles</a></li>
           <li><a href="#alerts">Alerts</a></li>
           <li><a href="#social">Social</a></li>
         </ul>
@@ -83,8 +85,11 @@
           <p>
             The Department of Justice has announced a full investigation into
             decades of water distribution practices affecting tribal lands and
-            rural communities. videos/water-management.mp4
+            rural communities.
           </p>
+          <video controls class="full-width-video">
+            <source src="videos/water-management.mp4" type="video/mp4" />
+          </video>
         </article>
         <article>
           <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
@@ -93,10 +98,12 @@
             of voters and potential voters of color and those in rural areas of
             the country.
           </p>
+          <video controls class="full-width-video">
+            <source src="videos/voter-suppression.mp4" type="video/mp4" />
+          </video>
         </article>
       </section>
 
-      <!-- IMPLEMENT THIS: videos/voter-suppression.mp4  -->
       <section id="featured-articles">
         <h2>Featured Articles</h2>
         <article>
@@ -176,7 +183,7 @@
           <input type="text" id="name" name="name" required />
 
           <label for="mobile">Mobile</label>
-          <input type="tel" id="mobile" required />
+          <input type="tel" id="mobile" name="mobile" required />
 
           <fieldset>
             <legend>Notification Preferences</legend>
