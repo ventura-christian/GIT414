@@ -1,4 +1,4 @@
-# Assignment: Basic Website Testing
+# Assignment: The Secret Garden: Basic Website Testing
 
 ## Description
 
@@ -8,7 +8,7 @@
 
 - The objective was to apply concepts from the module’s lecture and focus on identifying and correcting errors in HTML and CSS to resolve display and functional issues.
 
-🔗 [Live Demo](https://ventura-christian.github.io/GIT414/basic_website_testing)
+🔗 [Live Demo](https://ventura-christian.github.io/GIT414/the_secret_garden)
 
 ## Files
 

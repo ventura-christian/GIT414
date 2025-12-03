@@ -26,7 +26,7 @@ I’ll update this section with assignment titles and links as they are complete
 - 🌑[CSS Accessibility](./css_accessibility)
 - 🧿[Grid](./grid)
 - 🌩️[Civic Lens](./civic_lens/)
-- 🦗[Basic Website Testing](./basic_website_testing/)
+- 🦗[The Secret Garden](./the_secret_garden/)
 
 ## 🚀 Goals
 
