@@ -214,6 +214,10 @@ main section a {
   cursor: pointer;
 }
 
+#menu-toggle:hover {
+  color: var(--bg-alt);
+}
+
 /* Navigation */
 
 .mobile-nav ul {
@@ -243,6 +247,14 @@ main section a {
 .mobile-nav a:hover {
   background: var(--social);
   color: var(--bg-alt);
+}
+
+.mobile-nav label:hover {
+  background: var(--text-main);
+  border: 1px solid var(--social);
+  border-radius: 4px;
+  color: var(--bg-main);
+  padding: 0.25rem;
 }
 
 /* Social Links */
@@ -304,10 +316,45 @@ main section a {
   }
 }
 
+@media (min-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--spacing-m);
+    background: none;
+    position: static;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li a {
+    font-size: var(--font-size-base);
+    padding: var(--spacing-xs) var(--spacing-s);
+  }
+}
+
 @media (min-width: 920px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.35rem;
+  }
+
   main {
     margin: auto;
     width: 100%;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.7;
   }
 }
 
@@ -329,6 +376,7 @@ main section a {
 /* :has() Feature Support */
 @supports (selector(:has(*))) {
   body:has(#menu-toggle:checked) {
-    background-color: var(--accent-color);
+    background-color: var(--bg-main);
+    backdrop-filter: brightness(0.5);
   }
 }
