@@ -105,6 +105,7 @@ blockquote.tagline {
 }
 
 footer {
+  background: var(--bg-alt);
   border: 2px solid var(--border-color);
   border-radius: 6px;
   box-shadow: var(--shadow-color);
@@ -118,7 +119,7 @@ footer {
 form {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 
 form button,
@@ -127,21 +128,26 @@ form input {
   background: var(--bg-panel);
   border: 1px solid var(--border-color);
   border-radius: 4px;
-  box-shadow: inset 0 1px 2px var(--accent-soft);
-  padding: 0.6rem;
+  padding: 0.5rem;
 }
 
 form button {
-  background: var(--bg-alt);
-  box-shadow: inset 0 1px 0 var(--bg-alt);
-  color: var(--accent-color);
+  background: var(--accent-soft);
+  color: var(--bg-alt);
   cursor: pointer;
   font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 100px;
 }
 
 form button:hover {
-  background: var(--accent-color);
+  background: var(--social);
   color: var(--bg-alt);
+}
+
+form legend {
+  padding: 0.5rem;
 }
 
 .full-width-video {
@@ -161,6 +167,7 @@ h2 {
 }
 
 header {
+  background: var(--bg-alt);
   border: 2px solid var(--border-color);
   border-radius: 8px;
   box-shadow: var(--shadow-color);
@@ -195,6 +202,10 @@ main section {
   width: 92%;
 }
 
+main section a {
+  text-decoration: none;
+}
+
 .menu-button {
   color: var(--social);
 }
@@ -208,7 +219,7 @@ main section {
 .mobile-nav ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.5rem;
   justify-content: center;
   list-style: none;
   margin-top: 1rem;
@@ -217,22 +228,20 @@ main section {
 
 .mobile-nav a {
   align-items: center;
-  background: var(--bg-alt);
-  border: 1px solid var(--border-color);
+  background: var(--accent-soft);
   border-radius: 4px;
-  box-shadow: inset 0 1px 0 var(--bg-alt);
-  color: var(--accent-color);
+  color: var(--bg-alt);
   display: flex;
   font-weight: 600;
   height: 50px;
   justify-content: center;
   padding: 0;
   text-decoration: none;
-  width: 85px;
+  width: 80px;
 }
 
 .mobile-nav a:hover {
-  background: var(--accent-color);
+  background: var(--social);
   color: var(--bg-alt);
 }
 

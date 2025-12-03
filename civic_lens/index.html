@@ -63,14 +63,6 @@
       </nav>
     </header>
 
-    <!-- subscribe button styles -->
-    <!-- background: var(--bg-alt); -->
-    <!-- box-shadow: inset 0 1px 0 var(--bg-alt); -->
-    <!-- color: var(--accent-color); -->
-
-    <!-- hover styles -->
-    <!-- background: var(--accent-color); -->
-    <!-- color: var(--bg-alt); -->
     <main>
       <section>
         <h2>Welcome to Civic Lens</h2>
@@ -210,7 +202,11 @@
       </section>
 
       <section id="alerts">
-        <h2>Stay Informed. Stay Empowered.</h2>
+        <h2>
+          Stay Informed.
+          <br />
+          Stay Empowered.
+        </h2>
         <h3>
           <small>
             <strong>
@@ -374,15 +370,15 @@
       if (saved) {
         root.setAttribute("data-theme", saved);
       } else {
-        const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
+        const prefersLight = window.matchMedia(
+          "(prefers-color-scheme: light)"
         ).matches;
-        root.setAttribute("data-theme", prefersDark ? "dark" : "light");
+        root.setAttribute("data-theme", prefersLight ? "light" : "dark");
       }
 
       document.getElementById("theme-toggle").addEventListener("click", () => {
         const current = root.getAttribute("data-theme");
-        const next = current === "dark" ? "light" : "dark";
+        const next = current === "light" ? "dark" : "light";
         root.setAttribute("data-theme", next);
         localStorage.setItem("theme", next);
       });
