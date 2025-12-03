@@ -33,19 +33,20 @@
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
-          <clipPath id="a">
+          <clippath id="a">
             <path d="m18.512 18.512h62.977v62.977h-62.977z" />
-          </clipPath>
+          </clippath>
         </defs>
         <g clip-path="url(#a)">
           <path
             d="m65.098 68.164c-9.2812 7.7266-23.09 7.2422-31.797-1.4648-8.707-8.7031-9.1953-22.516-1.4648-31.793 0.74609-0.89844 2.1016-0.96875 2.9258-0.14453l30.473 30.477c0.82422 0.82422 0.75391 2.1797-0.13672 2.9258m7.168-40.43c-12.297-12.297-32.234-12.297-44.531 0-12.297 12.301-12.297 32.234 0 44.531s32.234 12.297 44.531 0 12.297-32.23 0-44.531"
-            fill="#333"
+            fill="#89a4c2"
             fill-rule="evenodd"
           />
         </g>
       </svg>
     </button>
+
     <header>
       <h1>Civic Lens</h1>
       <p class="tagline">See Clearly. Know Deeply. Act Justly.</p>
@@ -61,7 +62,16 @@
         </ul>
       </nav>
     </header>
-    <main id="main-content">
+
+    <!-- subscribe button styles -->
+    <!-- background: var(--bg-alt); -->
+    <!-- box-shadow: inset 0 1px 0 var(--bg-alt); -->
+    <!-- color: var(--accent-color); -->
+
+    <!-- hover styles -->
+    <!-- background: var(--accent-color); -->
+    <!-- color: var(--bg-alt); -->
+    <main>
       <section>
         <h2>Welcome to Civic Lens</h2>
         <p>
@@ -201,9 +211,13 @@
 
       <section id="alerts">
         <h2>Stay Informed. Stay Empowered.</h2>
-        <p>
-          <strong>Receive text messages with the news you want to know.</strong>
-        </p>
+        <h3>
+          <small>
+            <strong>
+              Receive text messages with the news you want to know.
+            </strong>
+          </small>
+        </h3>
         <form action="https://wp.zybooks.com/form-viewer.php" method="post">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required />
@@ -272,39 +286,109 @@
       <section id="social">
         <h2>Follow Us</h2>
         <ul>
-          <li><a href="#">X</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">YouTube</a></li>
-          <li><a href="#">TikTok</a></li>
-          <li><a href="#">LinkedIn</a></li>
+          <li>
+            <a href="https://x.com/" target="_blank" aria-label="X">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M18.9 2H21l-6.1 6.9L22 22h-6.6l-4.2-7-4.8 7H3.3l6.5-7.7L2 2h6.7l3.8 6 4.4-6z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://instagram.com/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-2.8a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtube.com/" target="_blank" aria-label="YouTube">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M21.8 8.2s-.2-1.6-.8-2.3c-.8-.9-1.7-.9-2.1-.9C15.6 5 12 5 12 5h-.1s-3.6 0-6.9.1c-.4 0-1.3 0-2.1.9-.6.7-.8 2.3-.8 2.3S2 9.9 2 11.6v.9c0 1.7.2 3.4.2 3.4s.2 1.6.8 2.3c.8.9 1.8.9 2.2.9 1.6.1 6.8.1 6.8.1s3.6 0 6.9-.1c.4 0 1.3 0 2.1-.9.6-.7.8-2.3.8-2.3s.2-1.7.2-3.4v-.9c0-1.7-.2-3.4-.2-3.4zm-12 7.1V8.7l5.7 3.3-5.7 3.3z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://tiktok.com/" target="_blank" aria-label="TikTok">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M21 8a5.4 5.4 0 01-3.3-1.1A5.6 5.6 0 0115.9 4h-.8v11a2.9 2.9 0 11-2.9-2.9h.3V9.3h-.4A5.6 5.6 0 106 14.8a5.6 5.6 0 005.6 5.6 5.6 5.6 0 005.6-5.6V8.6a8.2 8.2 0 004.8 1.6V8z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M4.98 3.5A2.5 2.5 0 102.5 6a2.5 2.5 0 002.48-2.5zM3 8h4v12H3V8zm7 0h3.8v1.7h.1a4 4 0 013.6-2c3.9 0 4.6 2.6 4.6 6v6.3h-4V14c0-1.4 0-3.2-2-3.2-2 0-2.3 1.5-2.3 3.1v6H10V8z"
+                />
+              </svg>
+            </a>
+          </li>
         </ul>
       </section>
     </main>
+    <script>
+      const root = document.documentElement;
+      const saved = localStorage.getItem("theme");
 
+      if (saved) {
+        root.setAttribute("data-theme", saved);
+      } else {
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        root.setAttribute("data-theme", prefersDark ? "dark" : "light");
+      }
+
+      document.getElementById("theme-toggle").addEventListener("click", () => {
+        const current = root.getAttribute("data-theme");
+        const next = current === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        localStorage.setItem("theme", next);
+      });
+    </script>
     <footer>
       <p>&copy; 2025 Civic Lens. All rights reserved.</p>
     </footer>
-    <script>
-      const toggleButton = document.getElementById("theme-toggle");
-
-      toggleButton.addEventListener("click", () => {
-        const body = document.body;
-
-        // Toggle manually between light and dark mode
-        if (body.classList.contains("dark-mode")) {
-          body.classList.remove("dark-mode");
-          body.classList.add("light-mode");
-        } else if (body.classList.contains("light-mode")) {
-          body.classList.remove("light-mode");
-          body.classList.add("dark-mode");
-        } else {
-          // No class set yet, determine system preference
-          const prefersDark = window.matchMedia(
-            "(prefers-color-scheme: dark)"
-          ).matches;
-          body.classList.add(prefersDark ? "light-mode" : "dark-mode");
-        }
-      });
-    </script>
   </body>
 </html>
