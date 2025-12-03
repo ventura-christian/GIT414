@@ -211,11 +211,9 @@ main section a {
 }
 
 .menu-button:hover {
+  text-shadow: 1px 2px 3px var(--border-color);
+  color: var(--text-main);
   cursor: pointer;
-}
-
-#menu-toggle:hover {
-  color: var(--bg-alt);
 }
 
 /* Navigation */
@@ -249,13 +247,13 @@ main section a {
   color: var(--bg-alt);
 }
 
-.mobile-nav label:hover {
+/* .mobile-nav label:hover {
   background: var(--text-main);
   border: 1px solid var(--social);
   border-radius: 4px;
   color: var(--bg-main);
   padding: 0.25rem;
-}
+} */
 
 /* Social Links */
 
@@ -376,7 +374,6 @@ main section a {
 /* :has() Feature Support */
 @supports (selector(:has(*))) {
   body:has(#menu-toggle:checked) {
-    background-color: var(--bg-main);
-    backdrop-filter: brightness(0.5);
+    background-color: var(--social);
   }
 }
