@@ -5,7 +5,8 @@
 
 ## 📖 About This Repository
 
-This repository contains my coursework for GIT414: Website Design/Internet/Web. <br>Throughout the semester, I’ll be adding projects, assignments, and practice work to document my progress and growth in web development and design.
+This repository contains my coursework for GIT414: Website Design/Internet/Web.  
+Throughout the semester, I’ll be adding projects, assignments, and practice work to document my progress and growth in web development and design.
 
 ## 📡 Assignments
 
@@ -25,6 +26,7 @@ I’ll update this section with assignment titles and links as they are complete
 - 🌑[CSS Accessibility](./css_accessibility)
 - 🧿[Grid](./grid)
 - 🌩️[Civic Lens](./civic_lens/)
+- 🦗[Basic Website Testing](./basic_website_testing/)
 
 ## 🚀 Goals
 
